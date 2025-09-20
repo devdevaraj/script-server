@@ -11,7 +11,7 @@ function App() {
     <li className="flex items-center justify-center gap-4">
      <a
       className="text-blue-600"
-      href="/scripts/hello-world.sh"
+      href="/hello-world.sh"
      >
       Hello world
      </a>
