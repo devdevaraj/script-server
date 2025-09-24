@@ -2,7 +2,7 @@ import './App.css'
 
 function App() {
  const copy = () => {
-  navigator.clipboard.writeText(`curl -s ${location}/hello-world.sh | sh`);
+  navigator.clipboard.writeText(`curl -s ${location}hello-world.sh | sh`);
  }
  return (
   <main className="p-4">
