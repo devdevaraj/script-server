@@ -18,7 +18,7 @@ function App() {
        className="text-blue-600"
        href={e}
       >
-       {e.split("/")[1].split(".sh")[0]}
+       {e.split("/")[1].split(".sh")[0].replace("-"," ")}
       </a>
       <button onClick={() => copy(e)}>
        copy
