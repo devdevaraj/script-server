@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
  const copy = (script: string) => {
-  navigator.clipboard.writeText(`curl -s ${location}${script} | sh`);
+  navigator.clipboard.writeText(`curl -s ${location.origin}${script} | sh`);
   toast.success("Copied!");
  }
  const scripts = [
