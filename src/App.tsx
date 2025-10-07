@@ -1,8 +1,8 @@
 import './App.css'
 
 function App() {
- const copy = () => {
-  navigator.clipboard.writeText(`curl -s ${location}hello-world.sh | sh`);
+ const copy = (script: string) => {
+  navigator.clipboard.writeText(`curl -s ${location}${script} | sh`);
  }
  const scripts = [
   "/hello-world.sh",
@@ -20,7 +20,7 @@ function App() {
       >
        Hello world
       </a>
-      <button onClick={copy}>
+      <button onClick={() => copy(e)}>
        copy
       </button>
      </li>
