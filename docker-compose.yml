@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    networks:
+      my_network:
+        ipv4_address: 172.28.0.10
+    restart: unless-stopped
+
+networks:
+  my_network:
+    external: true
